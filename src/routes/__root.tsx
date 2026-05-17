@@ -89,6 +89,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
+      {
+        rel: "icon",
+        type: "image/png",
+        href: "/Optimum_edge_logo_no_bg-removebg-preview.png",
+      },
     ],
   }),
   shellComponent: RootShell,

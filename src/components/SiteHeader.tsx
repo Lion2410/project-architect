@@ -38,7 +38,7 @@ export function SiteHeader() {
       <div className="border-b border-border bg-background">
         <div className="container mx-auto flex flex-wrap items-center justify-between gap-3 px-4 py-3 text-sm">
           <Link to="/" className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-primary font-bold text-primary">OE</div>
+            <img src="/Optimum_edge_logo_no_bg-removebg-preview.png" alt="Optimum Edge logo" className="h-12 w-12 object-contain" />
             <div className="leading-tight">
               <div className="text-base font-bold text-primary tracking-wide">OPTIMUM EDGE</div>
               <div className="text-[10px] font-semibold text-muted-foreground tracking-widest">GLOBAL SERVICES LIMITED</div>
