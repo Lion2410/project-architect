@@ -192,7 +192,7 @@ function ServicePage() {
           <p className="mt-3 leading-relaxed text-muted-foreground">{service.overview}</p>
           <h2 className="mt-10 text-2xl font-bold text-primary">What we offer</h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">
-            {service.offerings.map((o) => (
+            {service.offerings.map((o: { name: string; desc: string }) => (
               <div key={o.name} className="rounded-xl border border-border bg-card p-5 shadow-sm">
                 <div className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-secondary" />
@@ -206,7 +206,7 @@ function ServicePage() {
           </div>
           <h2 className="mt-10 text-2xl font-bold text-primary">Industries we serve</h2>
           <div className="mt-3 flex flex-wrap gap-2">
-            {service.industries.map((i) => (
+            {service.industries.map((i: string) => (
               <span key={i} className="rounded-full bg-muted px-3 py-1 text-sm text-muted-foreground">{i}</span>
             ))}
           </div>

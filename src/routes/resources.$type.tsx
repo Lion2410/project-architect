@@ -73,7 +73,7 @@ function ResourcePage() {
       <PageHero eyebrow="Resources" title={data.title} subtitle={data.subtitle} />
       <section className="container mx-auto px-4 py-16">
         <div className="grid gap-5 md:grid-cols-2">
-          {data.items.map((it) => (
+          {data.items.map((it: { title: string; desc: string; meta: string }) => (
             <article key={it.title} className="flex items-start justify-between gap-4 rounded-xl border border-border bg-card p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-xl">
               <div className="flex-1">
                 <h3 className="text-lg font-bold text-primary">{it.title}</h3>
