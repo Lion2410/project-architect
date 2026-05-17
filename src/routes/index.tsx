@@ -91,7 +91,8 @@ function Index() {
               return (
                 <Link
                   key={s.title}
-                  to={`/services/${slug}` as string}
+                  to="/services/$slug"
+                  params={{ slug }}
                   className="group flex flex-col rounded-xl border border-border bg-card p-6 text-card-foreground shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-secondary hover:shadow-xl"
                 >
                   <div className={`mb-4 flex h-12 w-12 items-center justify-center rounded-full ${s.color} text-white`}>

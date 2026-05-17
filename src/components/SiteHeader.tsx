@@ -67,7 +67,7 @@ export function SiteHeader() {
                 to={l.to}
                 activeOptions={{ exact: l.to === "/" }}
                 className="rounded-md px-4 py-2 transition-colors hover:bg-white/10"
-                activeProps={{ className: "rounded-md px-4 py-2 bg-secondary text-secondary-foreground" }}
+                activeProps={{ className: "rounded-md px-4 py-2 bg-secondary text-secondary-foreground hover:bg-secondary/90" }}
               >
                 {l.label}
               </Link>
