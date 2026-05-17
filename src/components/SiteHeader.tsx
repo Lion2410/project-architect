@@ -118,14 +118,19 @@ function Dropdown({
       {open && (
         <div className="absolute right-0 top-full z-50 mt-1 w-64 overflow-hidden rounded-md border border-border bg-card text-card-foreground shadow-lg">
           {items.map((i) => (
-            <Link
+            <a
               key={i.to}
-              to={i.to}
-              onClick={onClose}
+              href={i.to}
+              onClick={(e) => {
+                e.preventDefault();
+                onClose();
+                window.history.pushState({}, "", i.to);
+                window.dispatchEvent(new PopStateEvent("popstate"));
+              }}
               className="block px-4 py-2 text-sm hover:bg-muted hover:text-secondary"
             >
               {i.label}
-            </Link>
+            </a>
           ))}
         </div>
       )}
